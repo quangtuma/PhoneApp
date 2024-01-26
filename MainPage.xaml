@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PhoneApp.MainPage">
 
-    <ScrollView>
+    <!--<ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -36,6 +36,19 @@
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
+    <VerticalStackLayout Spacing="15" Padding="20">
+        <Label Text = "Enter a Phoneword"
+               FontSize ="20"/>
+        <Entry x:Name = "PhoneNumberText"
+               Text = "1-555-NETMAUI" />
+        <Button x:Name = "TranslateButton"
+                Text = "Translate"
+                Clicked = "OnTranslate"/>
+        <Button x:Name = "CallButton"
+                Text = "Call"
+                IsEnabled = "False"
+                Clicked = "OnCall"/>
+    </VerticalStackLayout>
 
 </ContentPage>
